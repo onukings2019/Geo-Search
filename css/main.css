@@ -77,6 +77,10 @@ input[type=text] {
     padding: 5px 0px 5px 0px;
 
   }
+  #map{
+    display: block;
+    width: auto;
+  }
   input[type=text] {
     float: none;
     display: block;
@@ -185,6 +189,9 @@ form{
   text-align: center;
   margin: auto;
 }
+#map{
+        height: 100%;
+      }
 
 footer{
   height: 40px;
