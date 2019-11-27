@@ -6,10 +6,13 @@ $(document).ready(function(){
 });
 
 function mapAutocomplete() {
+// getElementById('map').style.backgroundColor = #ffffff;
         let map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
-          zoom: 13,
-          mapTypeId: 'roadmap'
+          //center: {lat: 8.9868, lng: 7.3626},
+          zoom: 7,
+          mapTypeId: 'roadmap',
+          backgroundColor: 'none'
+          
         });
 
         let input = document.getElementById('search');
@@ -70,3 +73,30 @@ function mapAutocomplete() {
           map.fitBounds(bounds);
         });
       }
+
+
+$(document).ready(function(){
+	$('#search').blur(function(){
+		let location = $('#search').val();
+		if(location == ''){
+			$('#error').html('');
+		}else{
+			$.ajax({
+				url: 'https://api.openweathermap.org/data/2.5/weather?q=' + location + '&units=metric' + '&APPID=1a3d68088228d76d61fa392c2a9ade0a',	
+
+				type: "GET",
+				datatype: JSON,
+				success: function(data){
+					let display = displayData(data);
+					$('#article').html(display);
+					$('#search').val('');
+				}
+			});
+		}
+	});
+});
+function displayData(data){
+	let location = $('#search').val();
+return "<span style = 'border: 5px solid red; padding: 5px;'> Current weather for "  + location + " : " + data.weather[0].main + "</span>";
+
+}
