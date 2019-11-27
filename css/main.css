@@ -31,6 +31,9 @@ body{
   text-transform: capitalize;
   font-weight: bolder;
 }
+#email{
+  color: red;
+}
  .nav a:hover{
   color: #ecee25;
   background-color: #000;
@@ -52,21 +55,61 @@ body{
   max-width: 50px;
   font-size: 16px;
 }
-input[type=text] {
- 
-  padding: 6px;
-  border: 1px solid #7B241C;
-  margin: auto;
-  font-size: 17px;
-  width: 300px;
+label{
+  text-align: justify;
+  padding: 5px;
+  margin-left: 10px;
 }
-#btn{
+legend{
+ 
+  margin: auto;
+  align-content: center;
+}
+input[type=text]{
+  width: 30%;
+  padding: 12px 20px;
+ 
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email]{
+  width: 30%;
+  padding: 12px 20px;
+ 
+  margin-left: 42px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  background-color: grey;
+   border: 3px solid #A4036F;
+}
+input[type=email]:focus {
+  background-color: grey;
+   border: 3px solid #A4036F;
+}
+
+input[type=submit] {
+  width: 20%;
   background-color: #7B241C;
-    color: #fff;
-    width: 10%;
-    height: 30px;
-    cursor: pointer;
-  }
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10%;
+}
+input[type=submit]:hover{
+  background-color: #A4036F;
+}
+
 @media (max-width: 600px){
   .toggle-nav{
     display: block;
@@ -89,13 +132,21 @@ input[type=text] {
     margin: 0;
     padding: 14px;
   }
-  #btn{
-    background-color: #7B241C;
-    color: #fff;
-    width: 50%;
-    height: 40px;
-    cursor: pointer;
-    margin-top: 5px;
+  input[type=email] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+   input[type=submit] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 4px;
   }
   .menu ul li{
     float: none;
@@ -128,14 +179,7 @@ input[type=text] {
   .menu ul li{
     display: block ! important;
   }
-  input[type=submit]{
-    background-color: #7B241C;
-    color: #fff;
-    width: 30px;
-    height: 20%;
-    cursor: pointer;
-    margin-top: 5px;
-  }
+ 
 }
 .fa {
   font-size: 30px;
@@ -169,8 +213,9 @@ input[type=text] {
   color: white;
 }
 section{
+  background-color: #fff;
   width: 100%;
-  height: 500px;
+  height: 480px;
   border: 3px solid #7B241C;
   margin-top: 10px;
   padding: 5px;
@@ -181,6 +226,26 @@ section{
   border-right-color: #FE5E41;
   border-width: 10px;
 }
+#map{
+  position: absolute;
+  
+  height: 70%;
+  background-color: #fff;
+  width: 45%;
+  margin-top: 5px;
+      }
+#article{
+  position: absolute;
+  left: 50%;
+  background-color: #fff;
+  width: 45%;
+  margin-top: 10px;
+  padding: 5px;
+  height: 50%;
+}
+.data{
+  border: 2px solid blue;
+}
 form{
   text-align: center;
   margin: auto;
@@ -189,9 +254,7 @@ form{
   text-align: center;
   margin: auto;
 }
-#map{
-        height: 100%;
-      }
+
 
 footer{
   height: 40px;
