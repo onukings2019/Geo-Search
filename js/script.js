@@ -97,6 +97,11 @@ $(document).ready(function(){
 });
 function displayData(data){
 	let location = $('#search').val();
-return "<span style = 'border: 5px solid red; padding: 5px;'> Current weather for "  + location + " : " + data.weather[0].main + "</span>";
+return "<p style = 'padding: 5px;'> Current weather for "  + location + " : " + data.weather[0].main + "</p>" + 
+"<p style = 'padding: 5px; marginTop:2px;'> Current Temperature for "  + location + " : " + data.main.temp + "&deg;C</p>" +
+"<p style = 'padding: 5px; marginTop:2px;'> Current Pressure for "  + location + " : " + data.main.pressure + " hPa</p>"+ 
+"<p style = 'padding: 5px; marginTop:2px;'> Current Humidity for "  + location + " : " + data.main.humidity + "%</p>";
+
+
 
 }
