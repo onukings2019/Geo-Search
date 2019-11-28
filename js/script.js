@@ -101,7 +101,8 @@ return "<p style = 'padding: 5px;'> Current weather Description for "  + locatio
 	"<p style = 'padding: 5px;'> Current weather for "  + location + " <b style='color:red'>: " + data.weather[0].main + "</b></p>" + 
 	"<p style = 'padding: 5px; marginTop:2px;'> Current Temperature for "  + location + " <b style='color:red'>: " + data.main.temp + "&deg;C</b></p>" +
 	"<p style = 'padding: 5px; marginTop:2px;'> Current Pressure for "  + location + "<b style='color:red'> : " + data.main.pressure + " hPa</b></p>"+ 
-	"<p style = 'padding: 5px; marginTop:2px;'> Current Humidity for "  + location + "<b style='color:red'> : " + data.main.humidity + "%</b></p>";
+	"<p style = 'padding: 5px; marginTop:2px;'> Current Humidity for "  + location + "<b style='color:red'> : " + data.main.humidity + "%</b></p>" +
+	"<p style = 'padding: 5px; marginTop:2px;'> Current Wind Speed for "  + location + "<b style='color:red'> : " + data.wind.speed + "m/s</b></p>";
 
 
 
