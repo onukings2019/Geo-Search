@@ -97,10 +97,11 @@ $(document).ready(function(){
 });
 function displayData(data){
 	let location = $('#search').val();
-return "<p style = 'padding: 5px;'> Current weather for "  + location + " : " + data.weather[0].main + "</p>" + 
-"<p style = 'padding: 5px; marginTop:2px;'> Current Temperature for "  + location + " : " + data.main.temp + "&deg;C</p>" +
-"<p style = 'padding: 5px; marginTop:2px;'> Current Pressure for "  + location + " : " + data.main.pressure + " hPa</p>"+ 
-"<p style = 'padding: 5px; marginTop:2px;'> Current Humidity for "  + location + " : " + data.main.humidity + "%</p>";
+return "<p style = 'padding: 5px;'> Current weather Description for "  + location + "<b style='color:red'> : " + data.weather[0].description + "</b></p>" + 
+	"<p style = 'padding: 5px;'> Current weather for "  + location + " <b style='color:red'>: " + data.weather[0].main + "</b></p>" + 
+	"<p style = 'padding: 5px; marginTop:2px;'> Current Temperature for "  + location + " <b style='color:red'>: " + data.main.temp + "&deg;C</b></p>" +
+	"<p style = 'padding: 5px; marginTop:2px;'> Current Pressure for "  + location + "<b style='color:red'> : " + data.main.pressure + " hPa</b></p>"+ 
+	"<p style = 'padding: 5px; marginTop:2px;'> Current Humidity for "  + location + "<b style='color:red'> : " + data.main.humidity + "%</b></p>";
 
 
 
