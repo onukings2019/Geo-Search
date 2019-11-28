@@ -7,9 +7,14 @@
 	<meta name="Keywords" content="Find any location, Weather, Temperature, Share Map">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+
 	</head>
 <body>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=537736866613731&autoLogAppEvents=1"></script>
 	<header>
 		<nav class="menu"><a href="index.html"><img src="images/logo.png" alt="Geo-Search" min-height="50px" min-width="50px"></a>
 			<a class="toggle-nav" href="#">&#9776;</a>
@@ -20,10 +25,17 @@
 		    </ul></div>
 		   <div class="social">
 		   	<ul>
-		   		<li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-		        <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-		        <li><a href="linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="youtube.com"><i class="fa fa-youtube"></i></a></li>
+
+		   		<!-- Share Buttons BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_whatsapp"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
 		   	</ul>
 		   </div>
 		</nav>
@@ -32,14 +44,27 @@
 	<section>
 		<form>
 		 <input id="search" type="text" placeholder="Search..">
-		 <input type="submit" id="btn" name="submit" value="Geo-Search ...">
+		
 		 <span id="error"></span>
 		</form>
 		<div id="display"></div>
-		</section>
+		<div id="map"></div>
+		<div id="article">
+
+
+		</div>
+		<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+	</section>
 
 <footer>All Right Reserver | &copy; Geo-search 2019</footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIvel-0uX3VmjvBGew2tovYvN8OiYZAoQ&libraries=places&callback=mapAutocomplete"
+         async defer></script>
+
+         <script src="jquery-3.4.1"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
+
 </body>
 
 
