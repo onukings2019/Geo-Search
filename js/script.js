@@ -74,7 +74,7 @@ function mapAutocomplete() {
         });
       }
 
-
+//Get weather details
 $(document).ready(function(){
 	$('#search').blur(function(){
 		let location = $('#search').val();
