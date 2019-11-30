@@ -288,5 +288,10 @@ footer{
   .menu ul li{
     display: block ! important;
   }
-      
+  #article, section, #display{
+    max-height: 600px;
+  }  
+  #search{
+    width: 30%;
+  }  
 }

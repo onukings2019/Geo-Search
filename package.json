@@ -1,0 +1,32 @@
+{
+  "name": "geo-search",
+  "version": "1.0.0",
+  "description": "\"Geosearch App\"",
+  "main": "jquery-3.4.1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onukings2019/Geo-Search.git"
+  },
+  "author": "\"Onuh Kingsley\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onukings2019/Geo-Search/issues"
+  },
+  "homepage": "https://github.com/onukings2019/Geo-Search#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jshint": "^2.10.3",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.4"
+  }
+}
